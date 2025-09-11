@@ -25,5 +25,81 @@
 			<br>
 			<a href="tel:6120000000">Llamar</a>
 		</div>
+
+		<form>
+
+			<label>
+				Correo electrónico
+			</label>
+			<input type="email" name="" value="correo@gmail.com" readonly>
+			<br>
+
+			<label for="name">
+				Nombre:
+			</label>
+			<input type="text" name="nombre" id="name" autofocus 
+			value="" size="50" minlength="5" maxlength="10" required pattern="[A-Za-z]{3}" title="Solo 3 letras">
+			<br>
+
+			<label for="lastname">
+				Apellido:
+			</label>
+			<input type="text" name="nombre" id="lastname" placeholder="Escribe tu apellido" value="" required>
+			<br>
+
+			<label>
+				Teléfono
+			</label>
+			<input type="number" min="5" max="20" step="2" name="" disabled>
+			<br>
+
+			<label>
+				Género:
+			</label>
+			<label>
+				Hombre
+			</label>
+			<input type="radio" name="genero" value="Hombre">
+
+			<label>
+				Mujer
+			</label>
+			<input type="radio" name="genero" value="Mujer">
+			<br>
+
+			<label>
+				Preferencias:
+			</label>
+
+			<label>
+				Pizza
+			</label>
+			<input type="checkbox" name="Pizza" value="Preferencias">
+
+			<label>
+				Hamburguesa
+			</label>
+			<input type="checkbox" name="Hamburguesa" value="Preferencias">
+			<br>
+
+			<input type="submit" name="" value="Guardar">
+			<br>
+
+			<input type="button" name="" value="Hola">
+
+
+
+
+
+
+
+
+		</form>
+		
+
+
+
+
+
 	</body>
 </html>
