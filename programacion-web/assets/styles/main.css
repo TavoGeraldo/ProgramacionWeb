@@ -5,3 +5,31 @@ h1{
 #ir_contacto{
 	background: green;
 }
+
+a:hover{
+	color: red;
+	background: green;
+}
+
+#lista_comida li:first-child{
+	background: yellow;
+
+}
+
+#lista_comida li:last-child{
+	background: orange;
+
+}
+
+.parrafos{
+	background: red;
+}
+
+.informacion{
+	background: green;
+}
+
+p:hover{
+	background: black;
+	color: white;
+}
