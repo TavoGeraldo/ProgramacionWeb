@@ -27,12 +27,22 @@ a:hover{
 
 }
 
-.parrafos{
+.padding_paragraph{
 	background: red;
+	padding: 50px 20px 50px 20px;
 }
 
-.informacion{
+.border_paragraph{
 	background: green;
+	border: 10px;
+	border-style: double;
+	border-color: yellow;
+	border-radius: 10px;
+}
+
+.margin_paragraph{
+	background: blue;
+	margin: 25px 50px 25px 50px;
 }
 
 p:hover{
