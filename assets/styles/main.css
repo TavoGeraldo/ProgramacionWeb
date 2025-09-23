@@ -1,5 +1,5 @@
 h1{
-	background: darkred;
+	
 	font-family: super;
 }
 
@@ -38,4 +38,19 @@ a:hover{
 p:hover{
 	background: black;
 	color: white;
+}
+
+
+
+/*Estilos de contacto*/
+
+#tc{
+	text-shadow: 2px 2px green;
+}
+
+#parrafo_contacto{
+	text-align: right;
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-transform: uppercase;
 }
