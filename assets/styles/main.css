@@ -1,5 +1,11 @@
 h1{
 	background: darkred;
+	font-family: super;
+}
+
+@font-face {
+	font-family: super;
+	src: url('../fonts/super.ttf');
 }
 
 #ir_contacto{
