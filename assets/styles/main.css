@@ -12,6 +12,7 @@ h1{
 	background: green;
 }
 
+
 a:hover{
 	color: red;
 	background: green;
@@ -48,6 +49,15 @@ a:hover{
 p:hover{
 	background: black;
 	color: white;
+}
+
+
+#img_bg{
+	background-image: url("../img/montaña.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400px;
+
 }
 
 
