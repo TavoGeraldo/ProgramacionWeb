@@ -74,3 +74,79 @@ p:hover{
 	text-decoration-color: red;
 	text-transform: uppercase;
 }
+
+/*Estilos de about*/
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav_grid{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.content_grid{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.sidebar_grid{
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.footer_grid{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.flex_conteiner{
+	display: flex;
+	background-color: red;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.flex_conteiner div{
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+	font-size: 20px;
+}
+
+@media print and (orientation: portrait){
+	.my_photo{
+		display: none;
+	}
+	blockquote{
+		font-size: 70px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .my_photo{
+  	width: 50%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .my_photo{
+  	width: 50%;
+  	background-color: red;
+  }
+}
