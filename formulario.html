@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/styles/form.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="calculator_container">
+		
+		<label>
+			Nombre:
+		</label>
+        <input onkeypress="return onlyLetters(event)">
+        <br>
+        <br>
+        <label>
+			Apellido:
+		</label>
+        <input onkeypress="return onlyLetters(event)">
+        <br>
+        <br>
+        <label>
+			Telefono:
+		</label>
+        <input onkeypress="return onlyNumbers(event)">
+        <br>
+        <br>
+        <label>
+			Correo:
+		</label>
+        <input id="correo">
+        <br>
+        <br>
+        <label>
+			Género:
+		</label>
+        <select>
+            <option>
+                Hombre
+            </option>
+            <option>
+                Mujer
+            </option>
+        </select>
+        <br>
+        <br>
+        <label>
+			Bio:
+		</label>
+        <textarea id="bio"  onkeypress="return validateBio(event)"></textarea>
+        <br>
+        <br>
+        <button type="submit">Guardar cambios</button>
+
+
+	</div> 
+
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
