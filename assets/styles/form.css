@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+}
+
+html,body{
+	height: 100%;
+}
+
+.main_container{
+    height: 100%;
+    display: flex;
+    justify-content: left;
+	padding-top: 10px;
+    padding-left: 160px;
+    padding-bottom: 10px;
+    align-items: center;
+    background-color: #60A7B5; 
+}
+
+.form_container{
+	background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    width: 460px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.form_container > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form_group {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.inputs {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+}
+.save_buton{
+	width: 100%; 
+    margin-top: 10px;
+    padding: 12px; 
+    border: none;
+    border-radius: 6px;
+    background-color: #5A939E;
+    color: white;
+    font-weight: bold;
+}
+
+.save_buton:hover {
+    background-color: #4a8a96; 
+    
+}

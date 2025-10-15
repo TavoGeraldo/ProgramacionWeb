@@ -8,54 +8,60 @@
 </head>
 <body>
     
-    <div class="calculator_container">
-		
-		<label>
-			Nombre:
-		</label>
-        <input onkeypress="return onlyLetters(event)">
-        <br>
-        <br>
-        <label>
-			Apellido:
-		</label>
-        <input onkeypress="return onlyLetters(event)">
-        <br>
-        <br>
-        <label>
-			Telefono:
-		</label>
-        <input onkeypress="return onlyNumbers(event)">
-        <br>
-        <br>
-        <label>
-			Correo:
-		</label>
-        <input id="correo">
-        <br>
-        <br>
-        <label>
-			Género:
-		</label>
-        <select>
-            <option>
-                Hombre
-            </option>
-            <option>
-                Mujer
-            </option>
-        </select>
-        <br>
-        <br>
-        <label>
-			Bio:
-		</label>
-        <textarea id="bio"  onkeypress="return validateBio(event)"></textarea>
-        <br>
-        <br>
-        <button type="submit">Guardar cambios</button>
+    <div class="main_container">
+        
+		<form class="form_container" onsubmit="return validarAlEnviar()">
+            <h2>
+                Registro
+            </h2>
+            <div class="form_group">
+                <label>
+                    Nombre:
+                </label>
+                <input class="inputs" onkeypress="return onlyLetters(event)" placeholder="Escribe tu nombre">
+            </div>
+            <div class="form_group">
+            <label>
+                Apellido:
+            </label>
+            <input class="inputs" onkeypress="return onlyLetters(event)" placeholder="Escribe tu apellido">
+            </div>
+            <div class="form_group">
+            <label>
+                Telefono:
+            </label>
+            <input class="inputs" onkeypress="return onlyNumbers(event)" placeholder="Tu número de contacto">
+            </div>
+            <div class="form_group">
+            <label>
+                Correo:
+            </label>
+            <input class="inputs" id="correo" placeholder="Tu dirección correo electrónico">
+            </div>
+            
+            <div class="form_group">
+            <label>
+                Género:
+            </label>
+            <select class="inputs">
+                <option disabled selected>Elige una opción...</option>
+                <option>
+                    Hombre
+                </option>
+                <option>
+                    Mujer
+                </option>
+            </select>
+            </div>
+            <div class="form_group">
+            <label>
+                Bio:
+            </label>
+            <textarea class="inputs" id="bio"  onkeypress="return validateBio(event)" placeholder="Escribe algo sobre ti..."></textarea>
+            </div>
+            <button class="save_buton" type="submit">Guardar cambios</button>
 
-
+        </form>
 	</div> 
 
     <script src="assets/js/form.js"></script>
