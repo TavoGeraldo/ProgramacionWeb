@@ -3,19 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/styles/todo.css">
 	<title></title>
 	
 </head>
 <body>
 
-	<div class="calculator_container">
+	<div class="todo_container">
 		
-		<form action="" method="POST" onsubmit="return getTask()">
+		<form class="add_task" action="" method="POST" onsubmit="return getTask()">
 			
-			<label>
-				Tarea
-			</label>
-			<input type="text" name="name" id="task_name" placeholder="Escríbe aquí"  onpaste="return false" required> 
+			
+			<input type="text" name="name" id="task_name" placeholder="Agregar tarea"  onpaste="return false" required> 
 			
 			<button type="submit">
 				Guardar cambios
